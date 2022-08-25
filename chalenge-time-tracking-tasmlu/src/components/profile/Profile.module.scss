@@ -7,6 +7,7 @@
   display: flex ;
   flex-direction: column;
   align-items: center;
+  color: #fff;
 }
 .profileImage{
   width: 70px;
@@ -22,14 +23,9 @@
   display: grid;
   place-items: center;
 }
-
-.optionsContainer{
-  width: 80%;
-  height: 35%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: hsl(235, 45%, 61%);
+.tag{
+  font-size: .9em;
+  color:hsl(235, 36%, 72%);
 }
 .insideContainer{
   width: 80%;
@@ -41,4 +37,64 @@
   width: 80%;
   display: flex;
   flex-direction: column;
+  gap: 6px;
+}
+
+
+.sideContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.optionsContainer{
+  width: 80%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(235, 45%, 61%);
+}
+
+.profileName{
+  font-size: 1.6em;
+}
+
+@media only screen and (min-width : 1440px) {
+  
+  .card{
+    width: 250px;
+    height: 456px;
+  }
+  .header{
+    width: 100%;
+    height: 70%;
+  }
+  .profileImage{
+    width: 80px;
+    height: 80px;
+    
+  }
+  .insideContainer{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profileName{
+    font-size: 2.2em;
+  }
+  .optionsContainer{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: hsl(235, 45%, 61%);
+  }
+  
 }

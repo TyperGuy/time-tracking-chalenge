@@ -11,8 +11,8 @@ const ProfileCard = () => {
             alt="profile image"
           />
           <div className={Styles.sideContainer}>
-            <span>Reporter for</span>
-            <span>Jeremy Tobson</span>
+            <span className={Styles.tag}>Reporter for</span>
+            <span className={Styles.profileName}>Jeremy Robson</span>
           </div>
         </div>
       </header>
