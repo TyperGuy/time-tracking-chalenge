@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import getTimesFrames from "./services/getTimesFrames";
 import { TimeFrames } from "./types/types";
+import { Home } from "./pages/home/Home";
 
 function App() {
   const renderOnce = useRef(true);
@@ -21,9 +22,7 @@ function App() {
 
   return (
     <div>
-      {data.timeframes.map((frames) => {
-        return <p key={frames.title}>{frames.title}</p>;
-      })}
+      <Home timeframes={data.timeframes} />
     </div>
   );
 }
