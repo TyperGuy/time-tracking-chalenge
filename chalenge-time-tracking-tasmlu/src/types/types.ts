@@ -15,3 +15,18 @@ export type TimeFrames = {
   };
   title: string;
 };
+
+export interface Views {
+  daily: {
+    current: number;
+    previous: number;
+  };
+  monthly: {
+    current: number;
+    previous: number;
+  };
+  weekly: {
+    current: number;
+    previous: number;
+  };
+} 

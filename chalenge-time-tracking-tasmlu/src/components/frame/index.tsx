@@ -1,5 +1,7 @@
 import Styles from "./Frame.module.scss";
 import { DotsThree } from "phosphor-react";
+import { FC } from "react";
+import { TimeFrames, Views } from "../../types/types";
 
 const Images = [
   "./work.png",
@@ -9,9 +11,17 @@ const Images = [
   "social.png",
   "./self_care.png",
 ];
+var Messages = {
+  daily: "Yesterday - ",
+  weekly: "Last Week - ",
+  monthly: "Last Month - ",
+};
 
 const algo = "Exerci se";
-const Frame = () => {
+const Frame: FC<{ timeframe: TimeFrames; preferedView: keyof Views }> = ({
+  timeframe,
+  preferedView,
+}) => {
   const text = algo.replace(/\s/g, "");
   return (
     <div
@@ -20,12 +30,18 @@ const Frame = () => {
     >
       <div className={Styles.contentContainer}>
         <div className={Styles.header}>
-          <span className={Styles.title}>Categoria</span>
-          <DotsThree size={40} />
+          <span className={Styles.title}>{timeframe.title}</span>
+          <DotsThree className={Styles.icon} size={40} />
         </div>
         <div className={Styles.information}>
-          <span className={Styles.time}>4hrs</span>
-          <span>Last Week - 8hrs</span>
+          <span className={Styles.time}>
+            {timeframe.timeframes[preferedView].current + "hrs"}
+          </span>
+          <span>
+            {Messages[preferedView] +
+              timeframe.timeframes[preferedView].previous +
+              "hrs"}
+          </span>
         </div>
       </div>
     </div>

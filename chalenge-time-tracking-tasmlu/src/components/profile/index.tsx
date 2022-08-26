@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { FC, useState } from "react";
+import { Views } from "../../types/types";
 import Styles from "./Profile.module.scss";
 
 const options = ["Daily", "Weekly", "Monthly"];
 
-const ProfileCard = () => {
+const ProfileCard: FC<{ setPreferedView: (value: keyof Views) => void }> = ({
+  setPreferedView,
+}) => {
   const [selected, setSelected] = useState("Daily");
   return (
     <div className={Styles.card}>
@@ -24,10 +27,14 @@ const ProfileCard = () => {
         {options.map((option) => {
           return (
             <span
+              key={option}
               style={{
                 color: selected === option ? "#fff" : "hsl(235, 45%, 61%)",
               }}
-              onClick={() => setSelected(option)}
+              onClick={() => {
+                setSelected(option);
+                setPreferedView(option.toLocaleLowerCase() as keyof Views);
+              }}
             >
               {option}
             </span>
