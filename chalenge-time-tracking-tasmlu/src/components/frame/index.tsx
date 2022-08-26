@@ -16,7 +16,7 @@ const Frame = () => {
   return (
     <div
       className={Styles.frameContainer}
-      style={{ backgroundImage: `url(${Images[5]})` }}
+      style={{ backgroundImage: `url(${Images[4]})` }}
     >
       <div className={Styles.contentContainer}>
         <div className={Styles.header}>

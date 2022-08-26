@@ -7,8 +7,15 @@ import FrameCard from "../../components/frame";
 export const Home: FC<{ timeframes: TimeFrames[] }> = ({ timeframes }) => {
   return (
     <div className={Styles.container}>
-      <ProfileCard />;
-      <FrameCard />
+      <ProfileCard />
+      <div className={Styles.gridContainer}>
+        <FrameCard />
+        <FrameCard />
+        <FrameCard />
+        <FrameCard />
+        <FrameCard />
+        <FrameCard />
+      </div>
     </div>
   );
 };
