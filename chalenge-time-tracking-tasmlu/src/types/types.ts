@@ -30,3 +30,12 @@ export interface Views {
     previous: number;
   };
 } 
+
+export interface ColorsType {
+  Work: string;
+  Play: string;
+  Study: string;
+  Exercise: string;
+  Social: string;
+  Other: string;
+}

@@ -1,33 +1,41 @@
 import Styles from "./Frame.module.scss";
 import { DotsThree } from "phosphor-react";
 import { FC } from "react";
-import { TimeFrames, Views } from "../../types/types";
+import { TimeFrames, Views, ColorsType } from "../../types/types";
+import { getImage } from "../../services/getIcon";
 
-const Images = [
-  "./work.png",
-  "./play.png",
-  "./study.png",
-  "exercise.png",
-  "social.png",
-  "./self_care.png",
-];
-var Messages = {
+const Colors = {
+  Work: "hsl(15, 100%, 70%)",
+  Play: "hsl(195, 74%, 62%)",
+  Study: "hsl(348, 100%, 68%)",
+  Exercise: "hsl(145, 58%, 55%)",
+  Social: "hsl(264, 64%, 52%)",
+  Other: "hsl(43, 84%, 65%)",
+};
+const Messages = {
   daily: "Yesterday - ",
   weekly: "Last Week - ",
   monthly: "Last Month - ",
 };
+
+function setColor(title: string): keyof ColorsType {
+  if (title === "Self Care") return "Other";
+  return title as keyof ColorsType;
+}
 
 const algo = "Exerci se";
 const Frame: FC<{ timeframe: TimeFrames; preferedView: keyof Views }> = ({
   timeframe,
   preferedView,
 }) => {
-  const text = algo.replace(/\s/g, "");
   return (
     <div
       className={Styles.frameContainer}
-      style={{ backgroundImage: `url(${Images[4]})` }}
+      style={{
+        backgroundColor: Colors[setColor(timeframe.title)],
+      }}
     >
+      <img className={Styles.img} src={getImage(timeframe.title)} alt="" />
       <div className={Styles.contentContainer}>
         <div className={Styles.header}>
           <span className={Styles.title}>{timeframe.title}</span>
