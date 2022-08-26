@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Styles from "./Profile.module.scss";
 
+const options = ["Daily", "Weekly", "Monthly"];
+
 const ProfileCard = () => {
+  const [selected, setSelected] = useState("Daily");
   return (
     <div className={Styles.card}>
       <header className={Styles.header}>
@@ -17,9 +21,18 @@ const ProfileCard = () => {
         </div>
       </header>
       <div className={Styles.optionsContainer}>
-        <span>Daily</span>
-        <span>Weekly</span>
-        <span>Monthly</span>
+        {options.map((option) => {
+          return (
+            <span
+              style={{
+                color: selected === option ? "#fff" : "hsl(235, 45%, 61%)",
+              }}
+              onClick={() => setSelected(option)}
+            >
+              {option}
+            </span>
+          );
+        })}
       </div>
     </div>
   );

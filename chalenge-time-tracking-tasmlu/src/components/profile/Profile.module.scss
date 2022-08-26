@@ -1,5 +1,5 @@
 .card{
-  width: 350px;
+  width: 90%;
   height: 220px;
   background-color:  hsl(235, 46%, 20%);
   border-radius: 1rem;
@@ -53,10 +53,15 @@
   justify-content: space-between;
   align-items: center;
   color: hsl(235, 45%, 61%);
+  cursor: pointer;
+  transition: all ease-in .5s;
+}
+.optionsContainer>span:hover{
+  color:#fff;
 }
 
 .profileName{
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width : 1440px) {
