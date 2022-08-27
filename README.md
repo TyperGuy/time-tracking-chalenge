@@ -35,7 +35,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 ## My implementation 
 
-## 💻 Programming Languages
+### 💻 Programming Languages
 
 - Javascript
 
