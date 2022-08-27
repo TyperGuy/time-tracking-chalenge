@@ -40,7 +40,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 - Javascript
 
 
-## 📚 Libraries & frameworks
+### 📚 Libraries & frameworks
 
 - React.JS
 - Redux.JS
