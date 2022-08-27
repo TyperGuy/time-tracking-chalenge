@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .frameContainer{
   width: 304px;
   height: 180px;
@@ -11,6 +16,7 @@
   align-items: center;
   color: #fff;
   position: relative;
+  animation: fadeIn 5s;
 }
 .img{
   width: 50px;
@@ -92,3 +98,4 @@
   }
   
 }
+

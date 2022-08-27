@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import getTimesFrames from "./services/getTimesFrames";
 import { TimeFrames } from "./types/types";
 import { Home } from "./pages/home";
+import Spinner from "./loaders";
 
 function App() {
   const renderOnce = useRef(true);
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="main">
-      <Home timeframes={data.timeframes} />
+      {data.isFatching ? <Spinner /> : <Home timeframes={data.timeframes} />}
     </div>
   );
 }
