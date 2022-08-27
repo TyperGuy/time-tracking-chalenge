@@ -31,10 +31,34 @@ There is also a `style-guide.md` file containing the information you'll need, su
 -   Maintainability: is it written in a clean, maintainable way?
 -   Testing: is the system adequately tested?
 
-### CodeSubmit
+#My implementation 
 
-Please organize, design, test, and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
+## 💻 Programming Languages
 
-All the best and happy coding!
+- Javascript
 
-The Pixel Infinito Team
+
+## 📚 Libraries & frameworks
+
+- React.JS
+- Redux.JS
+
+## 🧠 What i will learn
+
+
+- [X] Redux Workflow
+- [X] Actions
+- [X] Reducers
+- [X] Stores
+- [X] Assync Actions
+- [x] Cobinate Multiple Reducers
+- [x] Middlewere
+- [X] Redux-Thunk Middlewere
+- [ ] React-Redux
+- [ ] useSelector Hook
+- [ ] useDispatch Hook
+- [ ] Logger Middlewere
+- [ ] Redux Devetool extension
+- [ ] Action Payload
+- [ ] MapStateToProps
+
