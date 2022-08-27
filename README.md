@@ -37,13 +37,14 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 ### 💻 Programming Languages
 
-- Javascript
+- Typescript
 
 
 ### 📚 Libraries & frameworks
 
 - React.JS
-- Redux.JS
+- Styled-Components
+- Lottie-React
 
 ### 🧠 What i will learn
 
