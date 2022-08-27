@@ -46,7 +46,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 - Styled-Components
 - Lottie-React
 
-### 🧠 What i will learn
+### 🧠 What is supost to be done
 
 
 - [X] View the optimal layout for the site depending on their device's screen size
