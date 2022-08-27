@@ -1,3 +1,6 @@
+<img src = "./ui.jpg"/>
+
+
 ### Objective
 
 In this challenge, your task is to retrieve data from an external API and render it like the provided designs. Use TypeScript and React.
