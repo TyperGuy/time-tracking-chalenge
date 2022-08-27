@@ -49,7 +49,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 ### 🧠 What i will learn
 
 
-- [X] Redux Workflow
+- [X] View the optimal layout for the site depending on their device's screen size
 - [X] Actions
 - [X] Reducers
 - [X] Stores
