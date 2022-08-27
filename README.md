@@ -56,4 +56,6 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 
 ## Credits
-<p> This chalenge was given to me by <a href="https://pixelinfinito.com/"><strong>Pixel Infinito</strong></a> company to test my Frontend Development skills Using reactJs and Typescript. The text is part of a fronted role selective process<p>
+<p> This chalenge was given to me by <a href="https://pixelinfinito.com/"><strong>Pixel Infinito</strong></a> company to test my Frontend development skills using reactJs and Typescript. The test is part of a selection process for a frontend vacancy<p>
+    
+   
