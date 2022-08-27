@@ -45,7 +45,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 - React.JS
 - Redux.JS
 
-## 🧠 What i will learn
+### 🧠 What i will learn
 
 
 - [X] Redux Workflow
