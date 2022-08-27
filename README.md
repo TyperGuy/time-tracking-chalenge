@@ -33,7 +33,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 -   Maintainability: is it written in a clean, maintainable way?
 -   Testing: is the system adequately tested?
 
-#My implementation 
+## My implementation 
 
 ## 💻 Programming Languages
 
