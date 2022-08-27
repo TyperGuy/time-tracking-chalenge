@@ -50,7 +50,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 
 - [X] View the optimal layout for the site depending on their device's screen size
-- [X] Actions
+- [X] See hover states for all interactive elements on the page
 - [X] Reducers
 - [X] Stores
 - [X] Assync Actions
